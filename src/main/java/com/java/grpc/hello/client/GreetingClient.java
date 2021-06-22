@@ -1,6 +1,5 @@
 package com.java.grpc.hello.client;
 
-import com.proto.test.TestMessage;
 import com.proto.test.TestServiceGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
