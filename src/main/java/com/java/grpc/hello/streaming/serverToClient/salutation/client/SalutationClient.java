@@ -16,7 +16,7 @@ public class SalutationClient {
                 .usePlaintext()
                 .build();
 
-        System.out.println("Creating ASYNCHRONOUS Stub");
+        System.out.println("Creating SYNCRHONOUS Stub");
 
         SalutationServiceBlockingStub salutationClient = SalutationServiceGrpc.newBlockingStub(channel);
 

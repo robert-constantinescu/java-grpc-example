@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package streaming;
+
+
+message PrimeNumber {
+  int32 prime_number = 1;
+}
+
+message PrimeNumberRequest {
+  int32 number = 1;
+}
+
+message PrimeNumberResponse {
+  PrimeNumber prime_number = 1;
+}
+
+service DecomposeToPrimes {
+
+  rpc Decompose(PrimeNumberRequest) returns (stream PrimeNumberResponse) {};
+}
