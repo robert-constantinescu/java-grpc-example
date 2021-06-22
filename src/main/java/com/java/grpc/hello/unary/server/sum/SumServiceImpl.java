@@ -1,4 +1,4 @@
-package com.java.grpc.hello.server.sum;
+package com.java.grpc.hello.unary.server.sum;
 
 import com.proto.unary.SumRequest;
 import com.proto.unary.SumResponse;

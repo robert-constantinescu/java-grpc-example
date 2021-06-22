@@ -1,4 +1,4 @@
-package com.java.grpc.hello.server.greeting;
+package com.java.grpc.hello.unary.server.greeting;
 
 import com.proto.unary.GreetRequest;
 import com.proto.unary.GreetResponse;

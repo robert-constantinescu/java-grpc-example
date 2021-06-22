@@ -1,4 +1,4 @@
-package com.java.grpc.hello.server.sum;
+package com.java.grpc.hello.unary.server.sum;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
