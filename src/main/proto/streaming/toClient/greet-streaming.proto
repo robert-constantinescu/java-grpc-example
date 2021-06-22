@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-package unary;
+import "unary/greet.proto";
+
+package streaming;
 
 option java_package = "com.proto.streaming";
 option java_multiple_files = true;
-import "unary/greet.proto";
+
 
 message SalutationRequest {
-  Greeting greeting = 1;
+  unary.Greeting greeting = 1;
 }
 
 message SalutationResponse {

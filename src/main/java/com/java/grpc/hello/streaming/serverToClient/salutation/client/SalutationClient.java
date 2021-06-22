@@ -1,4 +1,4 @@
-package com.java.grpc.hello.streaming.serverToClient.client;
+package com.java.grpc.hello.streaming.serverToClient.salutation.client;
 
 import com.proto.streaming.SalutationRequest;
 import com.proto.streaming.SalutationServiceGrpc;
