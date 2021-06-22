@@ -1,4 +1,4 @@
-package com.java.grpc.hello.server;
+package com.java.grpc.hello.server.greeting;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
