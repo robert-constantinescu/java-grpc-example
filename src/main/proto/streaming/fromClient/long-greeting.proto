@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "unary/greet.proto";
+
+package streaming;
+
+option java_package = "com.proto.streaming";
+option java_multiple_files = true;
+
+
+message LongGreetingRequest {
+  unary.Greeting greeting = 1;
+}
+
+message LongGreetingResponse {
+  string result = 1;
+}
+
+
+service ClientStreaming {
+
+  rpc LongGreet(stream LongGreetingRequest) returns (LongGreetingResponse) {}
+
+}
