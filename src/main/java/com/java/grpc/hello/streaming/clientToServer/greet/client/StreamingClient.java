@@ -109,10 +109,5 @@ public class StreamingClient {
         StreamingClient main = new StreamingClient();
         main.run();
 
-
-
-
-
-
     }
 }
