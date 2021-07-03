@@ -16,7 +16,7 @@ public class LongGreetingServiceImpl extends ClientStreamingGrpc.ClientStreaming
 
             @Override
             public void onNext(LongGreetingRequest value) {
-                System.out.println("LongGreetingService onNext()");
+                System.out.println("LongGreetingService onNext(): " + result);
                 //client sends a message
                 result += "> Hello " + value.getGreeting().getFirstName() +"! <";
             }
@@ -30,7 +30,7 @@ public class LongGreetingServiceImpl extends ClientStreamingGrpc.ClientStreaming
             public void onCompleted() {
                 //client is done
                 //here is when we want to return a response(responseObserver)
-                System.out.println("LongGreetingService onCompleted()");
+                System.out.println("LongGreetingService onCompleted(): " + result);
 
                 responseObserver.onNext(
                         LongGreetingResponse.newBuilder()
